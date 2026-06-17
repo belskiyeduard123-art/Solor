@@ -181,6 +181,7 @@ button { font-family: inherit; }
   height: 120%;
   background: radial-gradient(circle, rgba(255, 106, 19, 0.18), transparent 70%);
   pointer-events: none;
+  display: none;
 }
 .hero-grid { position: relative; display: grid; gap: 40px; align-items: center; }
 .hero-eyebrow {
@@ -390,6 +391,7 @@ button { font-family: inherit; }
   .footer-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .trust-grid { grid-template-columns: repeat(4, 1fr); }
   .fab-call { display: none; }
+  .hero::before { display: block; }
 }
 @media (min-width: 1024px) {
   .services-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
